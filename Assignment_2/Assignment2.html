@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 2 _ Yu Ren</title>
+</head>
+<body>
+
+<style>
+    /*this is used for change the style of progress*/
+    .pr {
+        height: 5px;
+        background: #c6efd7;
+    }
+
+    progress::-webkit-progress-bar {
+        background: #c6efd7;
+        border-radius: 10px;
+    }
+
+    progress::-webkit-progress-value {
+        background: #2ad9b1;
+        border-radius: 10px;
+    }
+</style>
+
+<!-- "padding" is used to generate space around an element's content-->
+<div style="padding: 60px 200px 60px 200px">
+    <!--head-->
+    <!--this is the head part including navigation bar and main page-->
+    <!--navigation-->
+    <div style="height: 20px">
+        <!-- "float" is used so that several elements can be in the same row-->
+        <!-- "border-radius" is used to set the radius of the element's corner-->
+        <button style="padding: 0 20px; background: #2ad9b1; color: black; font-size: 20px; border-radius: 5px; float: left">
+            O O
+        </button>
+        <div style="float: right">
+            <!-- "href" is used to link to the related part-->
+            <a href="#" style=" color: black; text-decoration: none"><strong>Home</strong></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#about_us" style=" color: black; text-decoration: none"><span>About us</span></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#services" style=" color: black; text-decoration: none"><span>Services</span></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#news" style=" color: black; text-decoration: none"><span>News</span></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#contact_me" style=" color: black; text-decoration: none"><span>Resources</span></a>
+        </div>
+    </div>
+    <!--Main page-->
+    <div style="margin-top: 150px; height: fit-content">
+        <img src="picture/1.png" style="height: 450px; width: 500px" align="right">
+        <div align="left" style="width: fit-content; padding-top: 120px">
+            <p style="margin: 0; font-size: 45px;">Sharing Vitality</p>
+            <h1 style="margin: 0; font-size: 50px">Through Designing</h1>
+            <p style="font-size: 20px; color: gray">clean design and advanced digital solutions</p>
+            <div style="margin-top: 50px">
+                <button style="background: #2ad9b1; border-radius: 30px; padding: 0 30px"><h3>Explore More</h3></button>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <!--empty, you can fill later after this link is available-->
+                <a href="#" style=" color: black; text-decoration: none"><span
+                        style="font-size: 20px;">See Live Demo</span></a>
+            </div>
+        </div>
+    </div>
+
+    <!--about me-->
+    <!--this is the part about company information-->
+    <div id="about_us" style="margin-top: 300px">
+        <!--pivture-->
+        <img src="picture/2.png" style="height: 600px; width: 600px;" align="left">
+        <!--words-->
+        <div style="margin-left: 600px; padding: 130px 110px 0 50px">
+            <span style="font-size: 12px; color: #2ad9b1">ABOUT ME</span>
+            <h2>Why hire us for your next project?</h2>
+            <p style="line-height: 24px; font-size: 17px">We are Creative Director and UI/UX Designer from New York,
+                working
+                in web devlopment and print media. We enjoy turning complex problems into
+                simple, beautiful and intuitive designs.</p>
+            <p style="line-height: 24px; font-size: 17px">Our job is to build your website so that it is functional and
+                user-friendly but at the same time attractive.</p>
+            <button style="margin-top:40px; padding: 20px 40px; background: #2ad9b1; color: white; font-size: 12px; border-radius: 5px">
+                Download CV
+            </button>
+        </div>
+    </div>
+    <!--four circles-->
+    <div style="margin-top: 100px">
+        <div>
+            <!--I use button for setting style easily-->
+            <button style="width: 200px; height: 200px; border: 1px #2ad9b1 solid; border-radius: 100px">
+                <h1 style="font-size: 40px">50%</h1>
+                <p style="font-size: 12px">WEB DESIGN</p>
+            </button>
+            <button style="width: 200px; height: 200px; border: 1px #2ad9b1 solid; border-radius: 100px; margin-left: 70px">
+                <h1 style="font-size: 40px">75%</h1>
+                <p style="font-size: 12px">DEVELOPMENT</p>
+            </button>
+            <button style="width: 200px; height: 200px; border: 1px #2ad9b1 solid; border-radius: 100px; margin-left: 70px">
+                <h1 style="font-size: 40px">20%</h1>
+                <p style="font-size: 12px">WEB DESIGN</p>
+            </button>
+            <button style="width: 200px; height: 200px; border: 1px #2ad9b1 solid; border-radius: 100px; margin-left: 70px">
+                <h1 style="font-size: 40px">50%</h1>
+                <p style="font-size: 12px">USER EXPERIENCE</p>
+            </button>
+        </div>
+    </div>
+
+    <!--my services-->
+    <div id="services" style="margin-top: 200px" align="center">
+        <p style="color: #2ad9b1; font-size: 20px;">MY SERVICES</p>
+        <h2 style="font-size: 40px">Our Provided Feature & Expertise</h2>
+    </div>
+    <div style="margin-top: 100px; height: 510px">
+        <!--Vertical div-->
+        <!--"box-shadow" is used for the shadow around the div-->
+        <div style="width:350px; height:450px; padding: 30px; float: left; border-radius: 5px; box-shadow: 0 10px 10px 10px whitesmoke">
+            <img src="picture/3.png" style="width: 130px; height: 130px;">
+            <p style="margin:30px 0; font-size: 35px">Web Design</p>
+            <p style="margin-top:60px; font-size: 17px; line-height: 24px"> Lorem ipsum dolor sit amet, Stet clita kasd
+                lorem ipsum dolor sit amet. sed diam eirmod tempor dolore.</p>
+            <button style="margin-top:40px; padding: 10px 40px; background: #2ad9b1; color: white; font-size: 15px;">
+                Know
+                More ->
+            </button>
+        </div>
+        <!--Horizontal div-->
+        <div style="width:450px; height:250px; margin-top: 100px; padding: 30px; float: right; border-radius: 5px; box-shadow: 0 10px 10px 10px #f3f5f9">
+            <h1 style="font-size: 40px">95%</h1>
+            <!--"progress" can be used for the progress-->
+            <progress class="pr" value="95" max="100" style="width: 450px"></progress>
+            <p style="margin:30px 0 10px 0; font-size: 30px">Web Design</p>
+            <p style="margin:0; font-size: 23px; color: gray">HTML, CSS, jQuery</p>
+        </div>
+    </div>
+    <div style="height: 510px">
+        <div style="width:450px; height:250px; margin-top: 100px; padding: 30px; float: left; border-radius: 5px; box-shadow: 0 10px 10px 10px #f3f5f9">
+            <h1 style="font-size: 40px">85%</h1>
+            <progress class="pr" value="85" max="100" style="width: 450px"></progress>
+            <p style="margin:30px 0 10px 0; font-size: 30px">Graphic Design</p>
+            <p style="margin:0; font-size: 23px; color: gray">Photoshop Illustrator</p>
+        </div>
+        <div style="width:350px; height:450px; padding: 30px; float: right; background: #2ad9b1; color: white; border-radius: 5px; box-shadow: 0 10px 10px 10px whitesmoke">
+            <img src="picture/4.png" style="width: 130px; height: 130px;">
+            <p style="margin:30px 0; font-size: 35px">Graphics Design</p>
+            <p style="margin-top:60px; font-size: 17px; line-height: 24px"> Lorem ipsum dolor sit amet, Stet clita kasd
+                lorem ipsum dolor sit amet. sed diam eirmod tempor dolore.</p>
+            <button style="margin-top:40px; padding: 10px 40px; background: white; color: black; font-size: 15px; border: none">
+                Know More ->
+            </button>
+        </div>
+    </div>
+    <div style="height: 510px">
+        <div style="width:350px; height:450px; padding: 30px; float: left; border-radius: 5px; box-shadow: 0 10px 10px 10px whitesmoke">
+            <img src="picture/5.png" style="width: 130px; height: 130px;">
+            <p style="margin:30px 0; font-size: 35px">Web Development</p>
+            <p style="margin-top:60px; font-size: 17px; line-height: 24px"> Lorem ipsum dolor sit amet, Stet clita kasd
+                lorem ipsum dolor sit amet. sed diam eirmod tempor dolore.</p>
+            <button style="margin-top:40px; padding: 10px 40px; background: #2ad9b1; color: white; font-size: 15px;">
+                Know
+                More ->
+            </button>
+        </div>
+        <div style="width:450px; height:250px; margin-top: 100px; padding: 30px; float: right; border-radius: 5px; box-shadow: 0 10px 10px 10px #f3f5f9">
+            <h1 style="font-size: 40px">70%</h1>
+            <progress class="pr" value="70" max="100" style="width: 450px"></progress>
+            <p style="margin:30px 0 10px 0; font-size: 30px">Web Development</p>
+            <p style="margin:0; font-size: 23px; color: gray">HTML, CSS, jQuery</p>
+        </div>
+    </div>
+    <div style="margin-top: 50px" align="center">
+        <button style="margin-top:40px; padding: 15px 50px; background: #2ad9b1; color: white; font-size: 15px; border-radius: 5px">
+            View More
+        </button>
+    </div>
+
+    <!--portfolio-->
+    <div style="margin-top: 150px;" align="center">
+        <p style="color: #2ad9b1; font-size: 20px;">PORTFOLIO</p>
+        <h2 style="font-size: 40px">My Work Examples</h2>
+        <div style="margin-top: 100px">
+            <!--four pictures are in the center of this page-->
+            <img src="picture/6.png" style="height: 300px; width: 220px;">
+            <img src="picture/7.png" style="height: 300px; width: 220px; margin-left: 30px">
+            <img src="picture/8.png" style="height: 300px; width: 220px; margin-left: 30px">
+            <img src="picture/9.png" style="height: 300px; width: 220px; margin-left: 30px">
+        </div>
+        <button style="margin-top:100px; padding: 30px 70px; background: #2ad9b1; color: white; font-size: 20px; border-radius: 5px">
+            View All
+        </button>
+    </div>
+
+    <!--testimonials-->
+    <!--"align='center'" is used so that everything in this div can be in the center-->
+    <div style="margin-top: 150px" align="center">
+        <p style="color: #2ad9b1; font-size: 20px;">TESTIMONIALS</p>
+        <h2 style="font-size: 40px">What People Says</h2>
+        <img src="picture/10.png" style="width: 70px; height: 60px; margin-top: 40px">
+        <p style="font-size: 17px; line-height: 25px; margin-top: 40px; padding: 0 200px">Lorem ipsum dolor sit amet,
+            Stet
+            clita kasd gubergren, no sea takimata sanctus est is the
+            lorem ipsum dolor sit amet. sed diam nonumy eirmod tempor invidunt ut labore et dolore is the magna
+            aliquyam.</p>
+        <h2 style="font-size: 35px; margin-top: 40px">John Doe</h2>
+        <p style="font-size: 20px; margin-top: 20px">CEO, ABC Company</p>
+        <img src="picture/11.png" style="width: 300px; height: 150px; margin-top: 20px">
+    </div>
+
+    <!--blog-->
+    <div id="news" style="margin-top: 150px" align="center">
+        <p style="color: #2ad9b1; font-size: 20px;">BLOG</p>
+        <h2 style="font-size: 40px">Trendy News Feeds</h2>
+    </div>
+    <div style="margin-top: 50px; height: 450px">
+        <!--Three blogs-->
+        <div style="width:320px; height:450px; float: left; border-radius: 5px; box-shadow: 0 10px 10px 10px whitesmoke">
+            <!--the head of this element-->
+            <img src="picture/12.png" style="width: 320px; height: 225px;">
+            <!--the body of this element-->
+            <div style="padding: 0 20px">
+                <h1 style="font-size: 20px; color: #2ad9b1">26th October,</h1>
+                <p style="font-size: 13px; line-height: 20px">I enjoy turning complex problems into simple, beautiful
+                    and
+                    intuitive designs.</p>
+                <h1 style="font-size: 15px; margin-top: 30px">Lorem ipsum dolor sit amet, Stet clita</h1>
+                <div style="margin-top: 40px"><a href="#"
+                                                 style=" color: #2ad9b1; text-decoration: none; margin-top: 30px">Know
+                    -></a></div>
+            </div>
+        </div>
+        <div style="width:320px; height:450px; margin-left: 30px; float: left; border-radius: 5px; box-shadow: 0 10px 10px 10px whitesmoke">
+            <img src="picture/13.png" style="width: 320px; height: 225px;">
+            <div style="padding: 0 20px">
+                <h1 style="font-size: 20px; color: #2ad9b1">26th October,</h1>
+                <p style="font-size: 13px; line-height: 20px">I enjoy turning complex problems into simple, beautiful
+                    and
+                    intuitive designs.</p>
+                <h1 style="font-size: 15px; margin-top: 30px">Lorem ipsum dolor sit amet, Stet clita</h1>
+                <div style="margin-top: 40px"><a href="#"
+                                                 style=" color: #2ad9b1; text-decoration: none; margin-top: 30px">Know
+                    -></a></div>
+            </div>
+        </div>
+        <div style="width:320px; height:450px; margin-left: 30px; float: left; border-radius: 5px; box-shadow: 0 10px 10px 10px whitesmoke">
+            <img src="picture/14.png" style="width: 320px; height: 225px;">
+            <div style="padding: 0 20px">
+                <h1 style="font-size: 20px; color: #2ad9b1">26th October,</h1>
+                <p style="font-size: 13px; line-height: 20px">I enjoy turning complex problems into simple, beautiful
+                    and
+                    intuitive designs.</p>
+                <h1 style="font-size: 15px; margin-top: 30px">Lorem ipsum dolor sit amet, Stet clita</h1>
+                <div style="margin-top: 40px"><a href="#"
+                                                 style=" color: #2ad9b1; text-decoration: none; margin-top: 30px">Know
+                    -></a></div>
+            </div>
+        </div>
+    </div>
+    <div style="margin-top: 50px" align="center">
+        <button style="padding: 30px 70px; background: #2ad9b1; color: white; font-size: 20px; border-radius: 5px">
+            View All
+        </button>
+    </div>
+
+    <!--contact me-->
+    <div id="contact_me" style="margin-top: 150px" align="center">
+        <p style="color: #2ad9b1; font-size: 20px;">CONTACT ME</p>
+        <h2 style="font-size: 40px">Send Us a Message</h2>
+    </div>
+    <div style="margin-top: 80px" align="center">
+        <!--A form for fill related information and send to us.-->
+        <!--The result will be sent to the "result.html" page.-->
+        <form action="result.html" method="GET">
+            <input type="text" name="name" placeholder=" Name"
+                   style="font-size:15px; width: 450px; height: 60px; border: 1px black solid; border-radius: 10px">
+            <input type="text" name="email" placeholder=" Email"
+                   style="font-size:15px; width: 450px; height: 60px; border: 1px black solid; border-radius: 10px; margin-left: 40px">
+            <br><br><br>
+            <input type="text" name="phone" placeholder=" Phone#"
+                   style="font-size:15px; width: 450px; height: 60px; border: 1px black solid; border-radius: 10px">
+            <!--"select" is used for the multiple selection and "option" is used for the options-->
+            <select name="budget" placeholder=" Budget"
+                    style="font-size:15px; width: 450px; height: 60px; border: 1px black solid; border-radius: 10px; margin-left: 40px; background: white;">
+                <option value="0~5000"> 0 ~ 5000</option>
+                <option value="5000~10000"> 5000 ~ 10000</option>
+                <option value="10000~20000"> 10000 ~ 20000</option>
+                <option value="20000~50000"> 20000 ~ 50000</option>
+                <option value=">50000"> > 50000</option>
+            </select>
+            <br><br><br>
+            <input type="text" name="message" placeholder=" Message"
+                   style="font-size:15px; width: 940px; height: 150px; border: 1px black solid; border-radius: 10px">
+            <button type="submit" formmethod="GET"
+                    style="margin-top: 80px; padding: 20px 70px; background: #2ad9b1; color: white; font-size: 20px; border-radius: 5px">
+                Send Message
+            </button>
+        </form>
+    </div>
+
+    <!--button-->
+    <div style="margin-top: 100px" align="right">
+        <!--skip to the top of this page when the button is clicked-->
+        <button onclick="window.location.href = '#'"
+                style="width: 50px; height: 50px; background: #2ad9b1; color: white; font-size: 30px; border-radius: 25px; border: none">
+            ^
+        </button>
+    </div>
+
+    <!--information-->
+    <!--The information about company.-->
+    <div>
+        <div style="height: 120px">
+            <button style="padding: 0 40px; background: #2ad9b1; color: black; font-size: 50px; border-radius: 5px; float: left">
+                O O
+            </button>
+            <div style="float: right">
+                <p style="font-size: 24px; line-height: 30px;">We are digital designer living in United States.
+                    <br>Apart from eating burger</p>
+            </div>
+        </div>
+        <div style="height: 100px">
+            <div style="float: left">
+                <p style="font-size: 17px; line-height: 30px;">Lorem ipsum dolor sit amet, Stet clita
+                    <br>kasd gubergren, no sea takimata</p>
+            </div>
+            <div style="float: right; margin-left: 50px">
+                <p style="font-size: 20px; color: #2ad9b1; margin-bottom: 10px">GET IN TOUCH</p>
+                <p style="font-size: 19px; margin-top: 0">123/A,</p>
+            </div>
+            <div style="float: right; margin-left: 50px">
+                <p style="font-size: 20px; color: #2ad9b1; margin-bottom: 10px">MAKE CALL</p>
+                <p style="font-size: 19px; margin-top: 0">+123 456 7890</p>
+            </div>
+            <div style="float: right">
+                <p style="font-size: 20px; color: #2ad9b1; margin-bottom: 10px">SENT MAIL</p>
+                <p style="font-size: 19px; margin-top: 0">info@portfolio.c</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--tail-->
+<!--The tail of this page.-->
+<div style="margin:0 0 50px 0; " align="center">
+    <hr style="border: 1px #2ad9b1 solid">
+    <p style="font-size: 20px">2019 All Rights Reserved</p>
+</div>
+
+</body>
+</html>
