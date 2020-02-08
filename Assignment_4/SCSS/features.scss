@@ -1,0 +1,360 @@
+/*Style of word in link*/
+.link {
+  color: black;
+  text-decoration: none;
+}
+
+/*Style of Function Circle in About Me*/
+.shadow_circle {
+  position: relative;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  box-shadow: 10px 10px 10px hsla(0, 0%, 0%, 0.05); /* shadow */
+  overflow: hidden;
+  text-align: center;
+  float: left;
+}
+
+@mixin progress_circle_style {
+  width: 150px;
+  height: 150px;
+  border: 7px solid transparent;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -82px;
+  margin-top: -82px;
+  transform: rotate(45deg); /* rotate 45 degree */
+}
+
+@function top_border_exist($per) {
+  @if $per > 15 {
+    @return true;
+  }
+  @return false;
+}
+
+@function right_border_exist($per) {
+  @if $per > 40 {
+    @return true;
+  }
+  @return false;
+}
+
+@function bottom_border_exist($per) {
+  @if $per > 65 {
+    @return true;
+  }
+  @return false;
+}
+
+@function left_border_exist($per) {
+  @if $per > 90 {
+    @return true;
+  }
+  @return false;
+}
+
+.progress_circle_50 {
+  @include progress_circle_style;
+  @if top_border_exist(50) {
+    border-top: 7px solid #1de9b6;
+  }
+  @if right_border_exist(50) {
+    border-right: 7px solid #1de9b6;
+  }
+  @if bottom_border_exist(50) {
+    border-bottom: 7px solid #1de9b6;
+  }
+  @if left_border_exist(50) {
+    border-left: 7px solid #1de9b6;
+  }
+}
+
+.progress_circle_20 {
+  @include progress_circle_style;
+  @if top_border_exist(20) {
+    border-top: 7px solid #1de9b6;
+  }
+  @if right_border_exist(20) {
+    border-right: 7px solid #1de9b6;
+  }
+  @if bottom_border_exist(20) {
+    border-bottom: 7px solid #1de9b6;
+  }
+  @if left_border_exist(20) {
+    border-left: 7px solid #1de9b6;
+  }
+}
+
+.progress_circle_75 {
+  @include progress_circle_style;
+  @if top_border_exist(75) {
+    border-top: 7px solid #1de9b6;
+  }
+  @if right_border_exist(75) {
+    border-right: 7px solid #1de9b6;
+  }
+  @if bottom_border_exist(75) {
+    border-bottom: 7px solid #1de9b6;
+  }
+  @if left_border_exist(75) {
+    border-left: 7px solid #1de9b6;
+  }
+}
+
+/* text_circle : size + border = progress_circle.size */
+.text_circle {
+  width: 148px;
+  height: 148px;
+  border: 2px solid #a7ffeb;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text {
+  position: absolute;
+  margin: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.number {
+  /*font-family: 'Patua One', cursive;*/
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.title {
+  /*font-family: 'Montserrat', sans-serif;*/
+  font-size: 10px;
+}
+
+.circles {
+  height: 220px;
+}
+
+/*----------------------  Styles in My Service  ------------------------*/
+
+@mixin feature_style($feature_float, $background_color, $font_color) {
+  /*Style of Feature module in the first layout of Service*/
+  .feature {
+    width: 350px;
+    height: 450px;
+    padding: 30px;
+    float: $feature_float;
+    background: $background_color;
+    color: $font_color;
+    border-radius: 5px;
+    /*"box-shadow" is used for the shadow around the div*/
+    box-shadow: 0 10px 10px 10px whitesmoke;
+    /*Styles in Feature*/
+    img {
+      width: 130px;
+      height: 130px;
+    }
+
+    h1 {
+      margin: 30px 0;
+      font-size: 35px;
+      font-weight: normal;
+    }
+
+    p {
+      margin-top: 60px;
+      font-size: 17px;
+      line-height: 24px
+    }
+  }
+}
+
+@mixin expertise_style($expertise_style) {
+  /*Style of Expertise module in the first layout of Service*/
+  .expertise {
+    width: 450px;
+    height: 250px;
+    margin-top: 100px;
+    padding: 30px;
+    float: $expertise_style;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px 10px #f3f5f9;
+    /*Styles in Expertise*/
+    h1 {
+      font-size: 40px;
+    }
+
+    h2 {
+      margin: 30px 0 10px 0;
+      font-size: 30px;
+      font-weight: normal;
+    }
+
+    p {
+      margin: 0;
+      font-size: 23px;
+      color: gray;
+    }
+  }
+}
+
+/*Style of Service module in My Service*/
+.service_1 {
+  height: 510px;
+
+  @include feature_style(left, white, black);
+  @include expertise_style(right);
+
+  /*Style of button in the first layout of Service*/
+  button {
+    margin-top: 40px;
+    padding: 10px 40px;
+    background: #2ad9b1;
+    color: white;
+    font-size: 15px;
+    border: none;
+  }
+}
+
+
+/*The second layout of Service*/
+.service_2 {
+  height: 510px;
+
+  @include feature_style(right, #2ad9b1, white);
+  @include expertise_style(left);
+
+  button {
+    margin-top: 40px;
+    padding: 10px 40px;
+    background: white;
+    color: black;
+    font-size: 15px;
+    border: none;
+  }
+}
+
+/*Style of Work Example*/
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /*grid-auto-rows: minmax(300px, 300px);*/
+  /*grid-auto-columns: minmax(300px, 300px);*/
+  grid-gap: 20px;
+  width: 100%;
+  height: 300px;
+  justify-content: end;
+}
+
+.wk_examples {
+  height: 300px;
+  width: 100%;
+  /*float: left;*/
+  img {
+    height: 300px;
+    width: 100%;
+  }
+}
+
+.front {
+  //position: absolute;
+  z-index: 1;
+  height: 300px;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  color: white;
+  background: rgba(42, 186, 161, 0);
+
+  p {
+    font-size: 25px;
+    margin-top: 70px;
+  }
+
+  button {
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+    background: none;
+    border: 1px white solid;
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+  }
+
+  &:hover {
+    opacity: 1;
+    background: rgba(42, 186, 161, 0.8);
+  }
+}
+
+/*Styles of three image circles*/
+.imgs_container {
+  text-align: center;
+  margin-top: 30px;
+
+  > img {
+    width: 70px;
+    height: 30px;
+  }
+
+  > div {
+    position: relative;
+    width: 185px;
+    height: 100px;
+    margin: 20px auto;
+  }
+
+  .left {
+    position: absolute;
+    left: 0;
+    top: 25px;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    border: 1px #2ad9b1 solid;
+    background-image: url('../picture/17.png');
+    background-size: 100% 100%;
+  }
+
+  .right {
+    position: absolute;
+    left: 135px;
+    top: 25px;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    border: 1px #2ad9b1 solid;
+    background-image: url('../picture/16.png');
+    background-size: 100% 100%;
+  }
+
+  .center {
+    position: absolute;
+    left: 40px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: 3px #2ad9b1 solid;
+    background-image: url('../picture/15.png');
+    background-size: 100% 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

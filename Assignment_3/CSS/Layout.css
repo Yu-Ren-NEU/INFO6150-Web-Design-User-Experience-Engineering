@@ -1,0 +1,786 @@
+/*----------------------  Styles in Public  ------------------------*/
+body {
+    font-family: Cochin;
+    padding: 60px 0;
+}
+
+/*different margin styles*/
+.margin_top_30 {
+    margin-top: 30px;
+}
+
+.margin_top_40 {
+    margin-top: 40px;
+}
+
+.margin_top_50 {
+    margin-top: 50px;
+}
+
+.margin_top_55 {
+    margin-top: 55px;
+}
+
+.margin_top_70 {
+    margin-top: 70px;
+}
+
+.margin_top_80 {
+    margin-top: 80px;
+}
+
+.margin_top_100 {
+    margin-top: 100px;
+}
+
+.margin_top_150 {
+    margin-top: 150px;
+}
+
+.margin_top_200 {
+    margin-top: 200px;
+}
+
+.margin_top_300 {
+    margin-top: 300px;
+}
+
+.margin_left_30 {
+    margin-left: 30px;
+}
+
+.margin_left_40 {
+    margin-left: 40px;
+}
+
+.margin_left_70 {
+    margin-left: 70px;
+}
+
+.margin_bottom_10 {
+    margin-bottom: 10px;
+}
+
+.margin_bottom_50 {
+    margin-bottom: 50px;
+}
+
+/*Style of word in link*/
+.link {
+    color: black;
+    text-decoration: none;
+}
+
+/*this is used for change the style of progress*/
+.pr {
+    height: 5px;
+    width: 450px;
+    background: #c6efd7;
+}
+
+progress::-webkit-progress-bar {
+    background: #c6efd7;
+    border-radius: 10px;
+}
+
+progress::-webkit-progress-value {
+    background: #2ad9b1;
+    border-radius: 10px;
+}
+
+/*Style of head in every module*/
+.head {
+    text-align: center;
+}
+
+.head > p {
+    color: #2ad9b1;
+    font-size: 20px;
+}
+
+/*Style of tail in every module*/
+.head > h2 {
+    font-size: 40px;
+}
+
+.tail {
+    text-align: center;
+}
+
+.tail > button {
+    padding: 15px 50px;
+    background: #2ad9b1;
+    color: white;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+
+/*----------------------  Styles in Navigation  ------------------------*/
+/*Style of Navigation div*/
+.navigation {
+    height: 20px;
+    padding: 0 200px;
+}
+
+/*Style of button in navigation*/
+.navigation > button {
+    padding: 0 20px;
+    background: #2ad9b1;
+    color: black;
+    font-size: 20px;
+    /*"border-radius" is used to set the radius of the element's corner*/
+    border-radius: 5px;
+    /*"float" is used so that several elements can be in the same row*/
+    float: left;
+}
+
+.navigation > nav {
+    float: right;
+}
+
+
+/*----------------------  Styles in Main Page  ------------------------*/
+/*Style of picture in main page*/
+.mp_pic {
+    height: 450px;
+    width: 500px;
+}
+
+/*Style of content in main page*/
+.mp_content {
+    width: fit-content;
+    padding-top: 120px;
+    text-align: left;
+}
+
+/*Style of title in content in main page*/
+.mp_content > h1 {
+    margin: 0;
+    font-size: 50px;
+}
+
+/*Style of subtitle in content in main page*/
+.mp_content > h2 {
+    margin: 0;
+    font-size: 45px;
+    font-weight: normal;
+}
+
+/*Style of paragraph in content in main page*/
+.mp_content > p {
+    font-size: 20px;
+    color: gray;
+}
+
+/*Style of button in content in main page*/
+.mp_content button {
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 20px;
+    border: none;
+}
+
+.mp_content button:hover {
+    background-color: #2ad9b1;
+}
+
+.mp_content span {
+    font-size: 20px;
+}
+
+
+/*----------------------  Styles in About Me  ------------------------*/
+/*Style of picture in About Me page*/
+.am_pic {
+    height: 600px;
+    width: 600px;
+}
+
+/*Layout of content in About Me page*/
+.am_content {
+    margin-left: 600px;
+    padding: 130px 110px 0 50px;
+}
+
+/*Style of title in content in About Me*/
+.am_content > span {
+    font-size: 12px;
+    color: #2ad9b1;
+}
+
+/*Style of paragraph in content in About Me*/
+.am_content > p {
+    line-height: 24px;
+    font-size: 17px;
+}
+
+/*Style of button in content in About Me*/
+.am_content > button {
+    margin-top: 40px;
+    padding: 20px 40px;
+    background: #2ad9b1;
+    color: white;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+/*Style of Function Circle in About Me*/
+.shadow_circle {
+    position: relative;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    box-shadow: 10px 10px 10px hsla(0, 0%, 0%, 0.05);/* shadow */
+    overflow: hidden;
+    text-align: center;
+    float: left;
+}
+.progress_circle_50 {
+    width: 150px;
+    height: 150px;
+    border: 7px solid transparent;
+    border-radius: 50%;
+    border-top: 7px solid #1de9b6;
+    border-right: 7px solid #1de9b6;/* top + right = 50% top = 25% top + right + bottom = 75% add related border */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -82px;
+    margin-top: -82px;
+    transform : rotate(45deg); /* rotate 45 degree */
+}
+
+.progress_circle_20 {
+    width: 150px;
+    height: 150px;
+    border: 7px solid transparent;
+    border-radius: 50%;
+    border-top: 7px solid #1de9b6;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -82px;
+    margin-top: -82px;
+    transform : rotate(45deg); /* rotate 45 degree */
+}
+
+.progress_circle_75 {
+    width: 150px;
+    height: 150px;
+    border: 7px solid transparent;
+    border-radius: 50%;
+    border-top: 7px solid #1de9b6;
+    border-right: 7px solid #1de9b6;/* top + right = 50% top = 25% top + right + bottom = 75% add related border */
+    border-bottom: 7px solid #1de9b6;/* top + right = 50% top = 25% top + right + bottom = 75% add related border */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -82px;
+    margin-top: -82px;
+    transform : rotate(45deg); /* rotate 45 degree */
+}
+/* text_circle : size + border = progress_circle.size */
+.text_circle {
+    width: 148px;
+    height: 148px;
+    border: 2px solid #a7ffeb;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text {
+    position: absolute;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.number {
+    /*font-family: 'Patua One', cursive;*/
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.title {
+    /*font-family: 'Montserrat', sans-serif;*/
+    font-size: 10px;
+}
+
+.circles {
+    height: 220px;
+}
+
+.outer {
+    width: 200px;
+    height: 200px;
+    box-shadow: 0 10px 10px 10px whitesmoke;
+    border-radius: 100px;
+    float: left;
+}
+
+.inner {
+    margin: 25px;
+    width: 150px;
+    height: 150px;
+    border: 1px #2ad9b1 solid;
+    border-radius: 75px;
+    text-align: center;
+}
+
+.inner h1 {
+    font-size: 40px;
+}
+
+.inner p {
+    font-size: 12px;
+}
+
+
+/*----------------------  Styles in My Service  ------------------------*/
+/*Style of Service module in My Service*/
+.service_1 {
+    height: 510px;
+}
+
+/*Style of Feature module in the first layout of Service*/
+.service_1 > .feature {
+    width: 350px;
+    height: 450px;
+    padding: 30px;
+    float: left;
+    border-radius: 5px;
+    /*"box-shadow" is used for the shadow around the div*/
+    box-shadow: 0 10px 10px 10px whitesmoke;
+}
+
+/*Styles in Feature*/
+.feature img {
+    width: 130px;
+    height: 130px;
+}
+
+.feature h1 {
+    margin: 30px 0;
+    font-size: 35px;
+    font-weight: normal;
+}
+
+.feature p {
+    margin-top: 60px;
+    font-size: 17px;
+    line-height: 24px
+}
+
+/*Style of button in the first layout of Service*/
+.service_1 button {
+    margin-top: 40px;
+    padding: 10px 40px;
+    background: #2ad9b1;
+    color: white;
+    font-size: 15px;
+    border: none;
+}
+
+/*Style of Expertise module in the first layout of Service*/
+.service_1 > .expertise {
+    width: 450px;
+    height: 250px;
+    margin-top: 100px;
+    padding: 30px;
+    float: right;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px 10px #f3f5f9;
+}
+
+/*Styles in Expertise*/
+.expertise h1 {
+    font-size: 40px;
+}
+
+.expertise h2 {
+    margin: 30px 0 10px 0;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.expertise p {
+    margin: 0;
+    font-size: 23px;
+    color: gray;
+}
+
+/*The second layout of Service*/
+.service_2 {
+    height: 510px;
+}
+
+.service_2 > .feature {
+    width: 350px;
+    height: 450px;
+    padding: 30px;
+    float: right;
+    background: #2ad9b1;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px 10px whitesmoke;
+}
+
+.service_2 > .expertise {
+    width: 450px;
+    height: 250px;
+    margin-top: 100px;
+    padding: 30px;
+    float: left;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px 10px #f3f5f9;
+}
+
+.service_2 button {
+    margin-top: 40px;
+    padding: 10px 40px;
+    background: white;
+    color: black;
+    font-size: 15px;
+    border: none;
+}
+
+
+/*----------------------  Styles in Portfolio  ------------------------*/
+/*Style of Work Example*/
+.wk_examples {
+    text-align: center;
+    height: 300px;
+}
+
+.wk_examples > div {
+    height: 300px;
+    width: 230px;
+    float: left;
+}
+
+.wk_examples img {
+    height: 300px;
+    width: 230px;
+}
+
+.front {
+    position: absolute;
+    z-index: 1;
+    height: 300px;
+    width: 230px;
+    text-align: center;
+    opacity: 0;
+    color: white;
+    background: rgba(42,186,161,0);
+}
+
+.front:hover {
+    opacity: 1;
+    background: rgba(42,186,161,0.8);
+}
+
+.front > p {
+    font-size: 25px;
+    margin-top: 70px;
+}
+
+.front > button {
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+    background: none;
+    border: 1px white solid;
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+}
+
+
+/*----------------------  Styles in Testimonials  ------------------------*/
+/*Style of Testimonial*/
+.testimonial {
+    text-align: center;
+}
+
+/*Styles in Testimonial module*/
+.tm_pic1 {
+    width: 70px;
+    height: 60px;
+    margin-top: 40px;
+}
+
+.tm_content {
+    font-size: 17px;
+    line-height: 25px;
+    margin-top: 40px;
+    padding: 0 200px;
+}
+
+.tm_name {
+    font-size: 35px;
+    margin-top: 40px;
+}
+
+.tm_position {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.tm_people {
+    width: 300px;
+    height: 150px;
+    margin-top: 20px;
+}
+
+/*Styles of three image circles*/
+.imgs_container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.imgs_container > img {
+    width: 70px;
+    height: 30px;
+}
+
+.imgs_container > div {
+    position:relative;
+    width: 185px;
+    height: 100px;
+    margin: 20px auto;
+}
+
+.imgs_container .left {
+    position: absolute;
+    left: 0;
+    top:25px;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    border: 1px #2ad9b1 solid;
+    background-image: url('../picture/17.png');
+    background-size: 100% 100%;
+}
+
+.imgs_container .right {
+    position: absolute;
+    left: 135px;
+    top:25px;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    border: 1px #2ad9b1 solid;
+    background-image: url('../picture/16.png');
+    background-size: 100% 100%;
+}
+
+.imgs_container .center {
+    position: absolute;
+    left: 40px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: 3px #2ad9b1 solid;
+    background-image: url('../picture/15.png');
+    background-size: 100% 100%;
+}
+
+/*----------------------  Styles in Blog  ------------------------*/
+.blog_height {
+    height: 450px;
+}
+
+/*Style of Blog module*/
+.blog {
+    width: 320px;
+    height: 450px;
+    float: left;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px 10px whitesmoke;
+}
+
+/*Styles in blog*/
+.blog img {
+    width: 320px;
+    height: 225px;
+}
+
+.blog_content {
+    padding: 0 20px;
+}
+
+.blog_content > h1 {
+    font-size: 20px;
+    color: #2ad9b1;
+}
+
+.blog_content > p {
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.blog_content > h2 {
+    font-size: 15px;
+    margin-top: 30px;
+}
+
+.blog_link {
+    color: #2ad9b1;
+    text-decoration: none;
+}
+
+
+/*----------------------  Styles in Contact Me  ------------------------*/
+/*Style of Contact module*/
+.contact {
+    text-align: center;
+}
+
+/*Styles of input in form*/
+.ip_name {
+    font-size:15px;
+    width: 450px;
+    height: 60px;
+    border: 1px black solid;
+    border-radius: 10px;
+}
+
+.ip_email {
+    font-size:15px;
+    width: 450px;
+    height: 60px;
+    border: 1px black solid;
+    border-radius: 10px;
+    margin-left: 40px;
+}
+
+.ip_phone {
+    font-size:15px;
+    width: 450px;
+    height: 60px;
+    border: 1px black solid;
+    border-radius: 10px;
+}
+
+.ip_msg {
+    font-size:15px;
+    width: 940px;
+    height: 150px;
+    border: 1px black solid;
+    border-radius: 10px;
+}
+
+/*Style of mutiple selector in form*/
+.opt_budget {
+    font-size:15px;
+    width: 450px;
+    height: 60px;
+    border: 1px black solid;
+    border-radius: 10px;
+    margin-left: 40px;
+    background: white;
+}
+
+/*Style of button in form*/
+.form_btn {
+    margin-top: 80px;
+    padding: 15px 50px;
+    background: #2ad9b1;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+
+/*----------------------  Styles in Information of Company  ------------------------*/
+/*Style of button for skipping to the top*/
+.skipbtn {
+    width: 50px;
+    height: 50px;
+    background: #2ad9b1;
+    color: white;
+    font-size: 30px;
+    border-radius: 25px;
+    border: none;
+}
+
+/*Styles of the first layer in Information module*/
+.info_first {
+    height: 120px;
+}
+
+.info_first button {
+    padding: 0 40px;
+    background: #2ad9b1;
+    color: black;
+    font-size: 50px;
+    border-radius: 5px;
+    float: left;
+}
+
+.info_first_content {
+    float: right;
+}
+
+.info_first_content p {
+    font-size: 24px;
+    line-height: 30px;
+}
+
+/*Styles of the second layer in Information module*/
+.info_second {
+    height: 100px;
+}
+
+.info_second_content {
+    float: left;
+}
+
+.info_second_content p {
+    font-size: 17px;
+    line-height: 30px;
+}
+
+.info_second_contact {
+    float: right;
+    margin-left: 50px;
+}
+
+.info_second_contact h1 {
+    font-weight: normal;
+    font-size: 20px;
+    color: #2ad9b1;
+    margin-bottom: 10px;
+}
+
+.info_second_contact p {
+    font-size: 19px;
+    margin-top: 0;
+}
+
+/*----------------------  Style of content div  ------------------------*/
+.page_content{
+    padding: 0 200px;
+}
+
+/*----------------------  Styles in Tail  ------------------------*/
+.footer_content {
+    padding: 0 200px;
+}
+
+.page_tail {
+    text-align: center;
+}
+
+.page_tail hr {
+    border: 1px #2ad9b1 solid;
+}
+
+.page_tail p {
+    font-size: 20px;
+}

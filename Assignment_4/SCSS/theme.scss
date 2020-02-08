@@ -1,0 +1,93 @@
+$main_color: #2ad9b1;
+$progress_back_color: #c6efd7;
+$main_font: Cochin;
+
+body {
+  font-family: $main_font;
+  padding: 60px 0;
+}
+
+/*Style of head*/
+.head {
+  text-align: center;
+
+  p {
+    color: $main_color;
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+}
+
+/*Style of tail*/
+.tail {
+  text-align: center;
+
+  button {
+    padding: 15px 50px;
+    background: $main_color;
+    color: white;
+    font-size: 15px;
+    border-radius: 5px;
+  }
+}
+
+/*----------------------  Styles in Navigation  ------------------------*/
+/*Style of Navigation div*/
+.navigation {
+  height: 20px;
+  padding: 20px 200px;
+  position: sticky;
+  background-color: rgba(255, 255, 255, 0.7);
+  top: 0;
+  z-index: 2;
+
+  button {
+    padding: 0 20px;
+    background: #2ad9b1;
+    color: black;
+    font-size: 20px;
+    /*"border-radius" is used to set the radius of the element's corner*/
+    border-radius: 5px;
+    /*"float" is used so that several elements can be in the same row*/
+    float: left;
+  }
+
+  nav {
+    float: right;
+  }
+}
+
+/*----------------------  Style of content div  ------------------------*/
+.page_content {
+  padding: 0 200px;
+}
+
+/*----------------------  Styles in Tail  ------------------------*/
+.footer_content {
+  padding: 0 200px;
+}
+
+.page_tail {
+  text-align: center;
+
+  hr {
+    border: 1px #2ad9b1 solid;
+  }
+
+  p {
+    font-size: 20px;
+  }
+}
+
+/*----------------------  Style of grid  --------------------------*/
+@for $i from 1 to 5 {
+  .#{cell}-#{$i} {
+    grid-row: 1;
+    grid-column: 0 + $i;
+  }
+}
+
+

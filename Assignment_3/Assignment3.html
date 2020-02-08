@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 3 _ Yu Ren</title>
+    <link href="CSS/Layout.css" rel="stylesheet">
+</head>
+<body>
+<!-- "padding" is used to generate space around an element's content-->
+<!--head-->
+<!--this is the head part including navigation bar and main page-->
+<!--navigation-->
+<header class="navigation">
+    <button>
+        O O
+    </button>
+    <nav>
+        <!-- "href" is used to link to the related part-->
+        <a href="#" class="link"><strong>Home</strong></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="#about_us" class="link"><span>About us</span></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="#services" class="link"><span>Services</span></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="#news" class="link"><span>News</span></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="#contact_me" class="link"><span>Resources</span></a>
+    </nav>
+</header>
+
+<div class="page_content">
+    <!--Main page-->
+    <div class="margin_top_150">
+        <img src="picture/1.svg" class="mp_pic" align="right">
+        <div class="mp_content">
+            <h2>Sharing Vitality</h2>
+            <h1>Through Designing</h1>
+            <p>clean design and advanced digital solutions</p>
+            <div class="margin_top_50">
+                <button>Explore More</button>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <button>See Live Demo</button>
+            </div>
+        </div>
+    </div>
+
+    <!--about me-->
+    <!--this is the part about company information-->
+    <div id="about_us" class="margin_top_300">
+        <!--pivture-->
+        <img src="picture/2.png" class="am_pic" align="left">
+        <!--words-->
+        <div class="am_content">
+            <span>ABOUT ME</span>
+            <h2>Why hire us for your next project?</h2>
+            <p>We are Creative Director and UI/UX Designer from New York,
+                working
+                in web devlopment and print media. We enjoy turning complex problems into
+                simple, beautiful and intuitive designs.</p>
+            <p>Our job is to build your website so that it is functional and
+                user-friendly but at the same time attractive.</p>
+            <button>
+                Download CV
+            </button>
+        </div>
+    </div>
+    <!--four circles-->
+    <div class="margin_top_100 circles">
+        <div class="shadow_circle">
+            <div class="progress_circle_50">
+                <div class="text_circle">
+                </div>
+            </div>
+            <div class="text">
+                <span class="number"> 50%</span><br>
+                <span class="title"> WEB DESIGN</span>
+            </div>
+        </div>
+        <div class="shadow_circle margin_left_40">
+            <div class="progress_circle_75">
+                <div class="text_circle">
+                </div>
+            </div>
+            <div class="text">
+                <span class="number"> 75%</span><br>
+                <span class="title"> DEVELOPMENT</span>
+            </div>
+        </div>
+        <div class="shadow_circle margin_left_40">
+            <div class="progress_circle_20">
+                <div class="text_circle">
+                </div>
+            </div>
+            <div class="text">
+                <span class="number"> 20%</span><br>
+                <span class="title"> WEB DESIGN</span>
+            </div>
+        </div>
+        <div class="shadow_circle margin_left_40">
+            <div class="progress_circle_50">
+                <div class="text_circle">
+                </div>
+            </div>
+            <div class="text">
+                <span class="number"> 50%</span><br>
+                <span class="title"> USER EXPERIENCE</span>
+            </div>
+        </div>
+        <!--        <div class="outer">-->
+        <!--            <div class="inner">-->
+        <!--                <h1 class="margin_top_40 margin_bottom_10">50%</h1>-->
+        <!--                <p>WEB DESIGN</p>-->
+        <!--            </div>-->
+        <!--        </div>-->
+        <!--        <div class="outer margin_left_70">-->
+        <!--            <div class="inner">-->
+        <!--                <h1 class="margin_top_40 margin_bottom_10">75%</h1>-->
+        <!--                <p>DEVELOPMENT</p>-->
+        <!--            </div>-->
+        <!--        </div>-->
+        <!--        <div class="outer margin_left_70">-->
+        <!--            <div class="inner">-->
+        <!--                <h1 class="margin_top_40 margin_bottom_10">20%</h1>-->
+        <!--                <p>WEB DESIGN</p>-->
+        <!--            </div>-->
+        <!--        </div>-->
+        <!--        <div class="outer margin_left_70">-->
+        <!--            <div class="inner">-->
+        <!--                <h1 class="margin_top_40 margin_bottom_10">50%</h1>-->
+        <!--                <p>USER EXPERIENCE</p>-->
+        <!--            </div>-->
+        <!--        </div>-->
+    </div>
+
+    <!--my services-->
+    <div id="services" class="head margin_top_200">
+        <p>MY SERVICES</p>
+        <h2>Our Provided Feature & Expertise</h2>
+    </div>
+    <div class="service_1 margin_top_100">
+        <!--Feature div-->
+        <div class="feature">
+            <img src="picture/3.png">
+            <h1>Web Design</h1>
+            <p> Lorem ipsum dolor sit amet, Stet clita kasd
+                lorem ipsum dolor sit amet. sed diam eirmod tempor dolore.</p>
+            <button>
+                Know
+                More ->
+            </button>
+        </div>
+        <!--Expertise div-->
+        <div class="expertise">
+            <h1>95%</h1>
+            <!--"progress" can be used for the progress-->
+            <progress class="pr" value="95" max="100"></progress>
+            <h2>Web Design</h2>
+            <p>HTML, CSS, jQuery</p>
+        </div>
+    </div>
+    <div class="service_2">
+        <div class="expertise">
+            <h1>85%</h1>
+            <progress class="pr" value="85" max="100"></progress>
+            <h2>Graphic Design</h2>
+            <p>Photoshop Illustrator</p>
+        </div>
+        <div class="feature">
+            <img src="picture/4.png">
+            <h1>Graphics Design</h1>
+            <p> Lorem ipsum dolor sit amet, Stet clita kasd
+                lorem ipsum dolor sit amet. sed diam eirmod tempor dolore.</p>
+            <button>
+                Know More ->
+            </button>
+        </div>
+    </div>
+    <div class="service_1">
+        <div class="feature">
+            <img src="picture/5.png">
+            <h1>Web Development</h1>
+            <p> Lorem ipsum dolor sit amet, Stet clita kasd
+                lorem ipsum dolor sit amet. sed diam eirmod tempor dolore.</p>
+            <button>
+                Know
+                More ->
+            </button>
+        </div>
+        <div class="expertise">
+            <h1>70%</h1>
+            <progress class="pr" value="70" max="100"></progress>
+            <h2>Web Development</h2>
+            <p>HTML, CSS, jQuery</p>
+        </div>
+    </div>
+    <div class="tail margin_top_100">
+        <button>
+            View More
+        </button>
+    </div>
+
+    <!--portfolio-->
+    <div class="head margin_top_150">
+        <p>PORTFOLIO</p>
+        <h2>My Work Examples</h2>
+    </div>
+    <div class="wk_examples margin_top_100">
+        <!--four pictures are in the center of this page-->
+        <div>
+            <div class="front">
+                <p>Phone Mockup</p>
+                <button>+</button>
+            </div>
+            <img src="picture/6.png">
+        </div>
+        <div class="margin_left_30">
+            <div class="front">
+                <p>Phone Mockup</p>
+                <button>+</button>
+            </div>
+            <img src="picture/7.png">
+        </div>
+        <div class="margin_left_30">
+            <div class="front">
+                <p>Phone Mockup</p>
+                <button>+</button>
+            </div>
+            <img src="picture/8.png">
+        </div>
+        <div class="margin_left_30">
+            <div class="front">
+                <p>Phone Mockup</p>
+                <button>+</button>
+            </div>
+            <img src="picture/9.png">
+        </div>
+    </div>
+    <div class="tail margin_top_100">
+        <button>
+            View All
+        </button>
+    </div>
+
+    <!--testimonials-->
+    <!--"align='center'" is used so that everything in this div can be in the center-->
+    <div class="head margin_top_150">
+        <p>TESTIMONIALS</p>
+        <h2>What People Says</h2>
+    </div>
+    <div class="testimonial">
+        <img src="picture/10.png" class="tm_pic1">
+        <p class="tm_content">Lorem ipsum dolor sit amet,
+            Stet
+            clita kasd gubergren, no sea takimata sanctus est is the
+            lorem ipsum dolor sit amet. sed diam nonumy eirmod tempor invidunt ut labore et dolore is the magna
+            aliquyam.</p>
+        <h2 class="tm_name">John Doe</h2>
+        <p class="tm_position">CEO, ABC Company</p>
+        <div class="imgs_container">
+            <img src="picture/18.png">
+            <div>
+                <div class="left">
+                </div>
+                <div class="right">
+                </div>
+                <div class="center">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--blog-->
+    <div id="news" class="head margin_top_150">
+        <p>BLOG</p>
+        <h2>Trendy News Feeds</h2>
+    </div>
+    <div class="blog_height margin_top_50">
+        <!--Three blogs-->
+        <div class="blog">
+            <!--the head of this element-->
+            <img src="picture/12.jpg">
+            <!--the body of this element-->
+            <div class="blog_content">
+                <h1>26th October,</h1>
+                <p>I enjoy turning complex problems into simple, beautiful
+                    and
+                    intuitive designs.</p>
+                <h2>Lorem ipsum dolor sit amet, Stet clita</h2>
+                <div class="margin_top_40"><a href="#" class="blog_link margin_top_30">Know
+                    -></a></div>
+            </div>
+        </div>
+        <div class="blog margin_left_30">
+            <img src="picture/13.jpg">
+            <div class="blog_content">
+                <h1>26th October,</h1>
+                <p>I enjoy turning complex problems into simple, beautiful
+                    and
+                    intuitive designs.</p>
+                <h2>Lorem ipsum dolor sit amet, Stet clita</h2>
+                <div class="margin_top_40"><a href="#" class="blog_link margin_top_30">Know
+                    -></a></div>
+            </div>
+        </div>
+        <div class="blog margin_left_30">
+            <img src="picture/14.jpg">
+            <div class="blog_content">
+                <h1>26th October,</h1>
+                <p>I enjoy turning complex problems into simple, beautiful
+                    and
+                    intuitive designs.</p>
+                <h2>Lorem ipsum dolor sit amet, Stet clita</h2>
+                <div class="margin_top_40"><a href="#" class="blog_link margin_top_30">Know
+                    -></a></div>
+            </div>
+        </div>
+    </div>
+    <div class="tail margin_top_70">
+        <button>
+            View All
+        </button>
+    </div>
+
+    <!--contact me-->
+    <div id="contact_me" class="head margin_top_150">
+        <p>CONTACT ME</p>
+        <h2>Send Us a Message</h2>
+    </div>
+    <div class="contact margin_top_80">
+        <!--A form for fill related information and send to us.-->
+        <!--The result will be sent to the "result.html" page.-->
+        <form action="result.html" method="GET">
+            <input class="ip_name" type="text" name="name" placeholder=" Name">
+            <input class="ip_email" type="email" name="email" placeholder=" Email">
+            <br><br><br>
+            <input class="ip_phone" type="tel" name="phone" placeholder=" Phone#">
+            <!--"select" is used for the multiple selection and "option" is used for the options-->
+            <select class="opt_budget" name="budget" placeholder=" Budget">
+                <option value="0~5000"> 0 ~ 5000</option>
+                <option value="5000~10000"> 5000 ~ 10000</option>
+                <option value="10000~20000"> 10000 ~ 20000</option>
+                <option value="20000~50000"> 20000 ~ 50000</option>
+                <option value=">50000"> > 50000</option>
+            </select>
+            <br><br><br>
+            <input class="ip_msg" type="text" name="message" placeholder=" Message">
+            <button class="form_btn" type="submit" formmethod="GET">
+                Send Message
+            </button>
+        </form>
+    </div>
+</div>
+
+<footer>
+    <div class="footer_content">
+        <!--button-->
+        <div class="margin_top_100" align="right">
+            <!--skip to the top of this page when the button is clicked-->
+            <button class="skipbtn" onclick="window.location.href = '#'">
+                ^
+            </button>
+        </div>
+
+        <!--information-->
+        <!--The information about company.-->
+        <div>
+            <div class="info_first">
+                <button>
+                    O O
+                </button>
+                <div class="info_first_content">
+                    <p>We are digital designer living in United States.
+                        <br>Apart from eating burger</p>
+                </div>
+            </div>
+            <div class="info_second">
+                <div class="info_second_content">
+                    <p>Lorem ipsum dolor sit amet, Stet clita
+                        <br>kasd gubergren, no sea takimata</p>
+                </div>
+                <div class="info_second_contact">
+                    <h1>GET IN TOUCH</h1>
+                    <p>123/A,</p>
+                </div>
+                <div class="info_second_contact">
+                    <h1>MAKE CALL</h1>
+                    <p>+123 456 7890</p>
+                </div>
+                <div class="info_second_contact">
+                    <h1>SENT MAIL</h1>
+                    <p>info@portfolio.c</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--tail-->
+    <!--The tail of this page.-->
+    <div class="page_tail margin_top_50 margin_bottom_50">
+        <hr>
+        <p>2019 All Rights Reserved</p>
+    </div>
+</footer>
+
+</body>
+</html>
