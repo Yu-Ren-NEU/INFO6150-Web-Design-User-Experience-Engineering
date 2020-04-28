@@ -1,0 +1,408 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Combo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Free HTML5 Website Template by GetTemplates.co"/>
+  <meta name="keywords"
+        content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive"/>
+  <meta name="author" content="GetTemplates.co"/>
+</head>
+<!--  end of Head-->
+<!--  start of body-->
+<body>
+<nav id="header-navbar" class="navbar navbar-expand-lg py-4">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center text-white" href="/">
+      <h3 class="font-weight-bolder mb-0">DIY COMBO</h3>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav-header"
+            aria-controls="navbar-nav-header" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="lnr lnr-menu"></span>
+    </button>
+    <!--      To different pages using router.-->
+    <div class="collapse navbar-collapse" id="navbar-nav-header">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/combolist">List</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/newcombo">New</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/userinfo">My Account</a>
+        </li>
+        <li class="nav-item only-desktop">
+          <a class="nav-link" id="side-nav-open" href="/userinfo">
+            <span class="lnr lnr-menu"></span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div id="page">
+  <div class="page-inner">
+    <div class="gtco-section">
+      <div class="gtco-container">
+        <!--            title of the main dishes-->
+        <div class="text-center gtco-heading">
+          <h2 class="cursive-font primary-color">Choose Main Dishes</h2>
+          <p>You could choose your favorite Main dishes.</p>
+        </div>
+        <!--            display  of  main dishes-->
+        <div class="row col-lg-12 col-md-12 maindish-container">
+          <!--              main　dish item with name and tags-->
+          <div class="col-lg-4 col-md-4 col-sm-6 maindish">
+            <!--            click the main dish you want , and then the page jump to the following page(creation form)-->
+            <a href="/newcombo{{routeid}}#creation" class="fh5co-card-item image-popup"
+               (click)="changeMain('Fresh Steak')">
+              <figure>
+                <div class="overlay"><i class="ti-plus"></i></div>
+                <img src="assets/menu/img/Fresh Steak.jpg" alt="Image" class="img-responsive">
+              </figure>
+              <div class="fh5co-text">
+                <h2>Fresh Steak</h2>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
+                <p><span class="price cursive-font">Proteins</span></p>
+              </div>
+            </a>
+          </div>
+          <!--              end of one main dish item-->
+          <div class="col-lg-4 col-md-4 col-sm-6 maindish">
+            <a href="/newcombo{{routeid}}#creation" class="fh5co-card-item image-popup"
+               (click)="changeMain('Cheese and Garlic Toast')">
+              <figure>
+                <div class="overlay"><i class="ti-plus"></i></div>
+                <img src="assets/menu/img/Cheese and Garlic Toast.jpg" alt="Image" class="img-responsive">
+              </figure>
+              <div class="fh5co-text">
+                <h2>Cheese and Garlic Toast</h2>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
+                <p><span class="price cursive-font">Fat</span></p>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 maindish">
+            <a href="/newcombo{{routeid}}#creation" class="fh5co-card-item image-popup"
+               (click)="changeMain('Grilled Chiken Salad')">
+              <figure>
+                <div class="overlay"><i class="ti-plus"></i></div>
+                <img src="assets/menu/img/Grilled Chiken Salad.jpg" alt="Image" class="img-responsive">
+              </figure>
+              <div class="fh5co-text">
+                <h2>Grilled Chiken Salad</h2>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
+                <p><span class="price cursive-font">Healthy</span></p>
+              </div>
+            </a>
+          </div>
+
+
+          <div class="col-lg-4 col-md-4 col-sm-6 maindish">
+            <a href="/newcombo{{routeid}}#creation" class="fh5co-card-item image-popup"
+               (click)="changeMain('Organic Egg')">
+              <figure>
+                <div class="overlay"><i class="ti-plus"></i></div>
+                <img src="assets/menu/img/Organic Egg.jpg" alt="Image" class="img-responsive">
+              </figure>
+              <div class="fh5co-text">
+                <h2>Organic Egg</h2>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
+                <p><span class="price cursive-font">Proteins/Oily</span></p>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-sm-6 maindish">
+            <a href="/newcombo{{routeid}}#creation" class="fh5co-card-item image-popup"
+               (click)="changeMain('Tomato Soup with Chicken')">
+              <figure>
+                <div class="overlay"><i class="ti-plus"></i></div>
+                <img src="assets/menu/img/Tomato Soup with Chicken.jpg" alt="Image" class="img-responsive">
+              </figure>
+              <div class="fh5co-text">
+                <h2>Tomato Soup with Chicken</h2>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
+                <p><span class="price cursive-font">Proteins/Sour</span></p>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-sm-6 maindish">
+            <a href="/newcombo{{routeid}}#creation" class="fh5co-card-item image-popup"
+               (click)="changeMain('Salad with Crispy Chicken')">
+              <figure>
+                <div class="overlay"><i class="ti-plus"></i></div>
+                <img src="assets/menu/img/Salad with Crispy Chicken.jpg" alt="Image" class="img-responsive">
+              </figure>
+              <div class="fh5co-text">
+                <h2>Salad with Crispy Chicken</h2>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
+                <p><span class="price cursive-font">Healthy/Proteins</span></p>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-sm-6 maindish">
+            <a href="/newcombo{{routeid}}#creation" class="fh5co-card-item image-popup"
+               (click)="changeMain('Boiled Chicken Broccoli')">
+              <figure>
+                <div class="overlay"><i class="ti-plus"></i></div>
+                <img src="assets/menu/img/Boiled Chicken Broccoli.jpg" alt="Image" class="img-responsive">
+              </figure>
+              <div class="fh5co-text">
+                <h2>Boiled Chicken Broccoli</h2>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
+                <p><span class="price cursive-font">Healthy/Fitness</span></p>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-sm-6 maindish">
+            <a href="/newcombo{{routeid}}#creation" class="fh5co-card-item image-popup"
+               (click)="changeMain('Chow Mein with Beef')">
+              <figure>
+                <div class="overlay"><i class="ti-plus"></i></div>
+                <img src="assets/menu/img/Chow Mein with Beef.jpg" alt="Image" class="img-responsive">
+              </figure>
+              <div class="fh5co-text">
+                <h2>Chow Mein with Beef</h2>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
+                <p><span class="price cursive-font">Oily/Salty</span></p>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-sm-6 maindish">
+            <a href="/newcombo{{routeid}}#creation" class="fh5co-card-item image-popup"
+               (click)="changeMain('Shrimp and cheese sandwich')">
+              <figure>
+                <div class="overlay"><i class="ti-plus"></i></div>
+                <img src="assets/menu/img/Shrimp and cheese sandwich.jpg" alt="Image" class="img-responsive">
+              </figure>
+              <div class="fh5co-text">
+                <h2>Shrimp and cheese sandwich</h2>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
+                <p><span class="price cursive-font">Fat/Proteins</span></p>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 maindish">
+            <a href="/newcombo{{routeid}}#creation" class="fh5co-card-item image-popup"
+               (click)="changeMain('Grilled chicken on iron plate')">
+              <figure>
+                <div class="overlay"><i class="ti-plus"></i></div>
+                <img src="assets/menu/img/Grilled chicken on iron plate.jpg" alt="Image" class="img-responsive">
+              </figure>
+              <div class="fh5co-text">
+                <h2>Grilled chicken on iron plate</h2>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
+                <p><span class="price cursive-font">Oily/Proteins</span></p>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-sm-6 maindish">
+            <a href="/newcombo{{routeid}}#creation" class="fh5co-card-item image-popup"
+               (click)="changeMain('Baked toast with pepper')">
+              <figure>
+                <div class="overlay"><i class="ti-plus"></i></div>
+                <img src="assets/menu/img/Baked toast with pepper.jpg" alt="Image" class="img-responsive">
+              </figure>
+              <div class="fh5co-text">
+                <h2>Baked toast with pepper</h2>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
+                <p><span class="price cursive-font">Fat</span></p>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-sm-6 maindish">
+            <a href="/newcombo{{routeid}}#creation" class="fh5co-card-item image-popup"
+               (click)="changeMain('Rice with shrimp and egg')">
+              <figure>
+                <div class="overlay"><i class="ti-plus"></i></div>
+                <img src="assets/menu/img/Rice with shrimp and egg.jpg" alt="Image" class="img-responsive">
+              </figure>
+              <div class="fh5co-text">
+                <h2>Rice with shrimp and egg</h2>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
+                <p><span class="price cursive-font">Proteins/Fat</span></p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="gtco-section">
+      <div class="gtco-container combo-others">
+        <div class="row" id="creation">
+          <div class="col-md-12">
+            <div class="col-md-12 animate-box">
+              <div class="row text-center">
+                <div class="gtco-heading">
+                  <h2 class="cursive-font primary-color">Create Your Combo</h2>
+                  <p>Choose One For Each Appetiser, Drink and Sauce </p>
+                </div>
+              </div>
+              <form action="#">
+                <!--                    The selected main dies-->
+                <div class="row form-group">
+                  <label>Main Dish</label>
+                  <div class="col-md-12">
+                    {{mainmenu1}}
+                  </div>
+                </div>
+                <!--                    Choose one Appetiser-->
+                <div class="row form-group">
+                  <label>Appetiser</label>
+                  <div class="col-md-12">
+                    <!-- <label class="sr-only" for="appetiser">Appetiser</label> -->
+                    <div class='col-md-3 col'>
+                      <img src="assets/menu/img/drumstick.png">
+                      <input type="radio" checked="checked" id="Wing" name="Appetiser">
+                      <label for="Wing" (click)="changeSide('Wing')"> Wing</label>
+                    </div>
+                    <div class='col-md-3 col'>
+                      <img src="assets/menu/img/frice.png">
+                      <input type="radio" id="Frice" name="Appetiser">
+                      <label for="Frice" (click)="changeSide('Fries')"> Fries</label>
+                    </div>
+                    <div class='col-md-3 col'>
+                      <img src="assets/menu/img/healthy-food.png">
+                      <input type="radio" id="Salad" name="Appetiser">
+                      <label for="Salad" (click)="changeSide('Salad')"> Salad</label>
+                    </div>
+                    <div class='col-md-3 col'>
+                      <img src="assets/menu/img/salami.png">
+                      <input type="radio" id="Salami" name="Appetiser">
+                      <label for="Salami" (click)="changeSide('Salami')"> Salami</label>
+                    </div>
+                  </div>
+                </div>
+                <!--                    Choose one Drink-->
+                <div class="row form-group">
+                  <label>Drink</label>
+                  <div class="col-md-12">
+                    <!-- <label class="sr-only" for="appetiser">Appetiser</label> -->
+                    <div class='col-md-3 col'>
+                      <img src="assets/menu/img/coffee.png">
+                      <input type="radio" checked="checked" id="Coffee" name="Drink" placeholder="Drink">
+                      <label for="Coffee" (click)="changeDrink('Coffee')"> Coffee</label>
+                    </div>
+                    <div class='col-md-3 col'>
+                      <img src="assets/menu/img/drink.png">
+                      <input type="radio" id="Juice" name="Drink" placeholder="Drink">
+                      <label for="Juice" (click)="changeDrink('Juice')"> Juice</label>
+                    </div>
+                    <div class='col-md-3 col'>
+                      <img src="assets/menu/img/tea.png">
+                      <input type="radio" id="Tea" name="Drink" placeholder="Drink">
+                      <label for="Tea" (click)="changeDrink('Tea')"> Tea</label>
+                    </div>
+                    <div class='col-md-3 col'>
+                      <img src="assets/menu/img/milk.png">
+                      <input type="radio" id="Milk" name="Drink" placeholder="Drink">
+                      <label for="Milk" (click)="changeDrink('Milk')"> Milk</label>
+                    </div>
+                  </div>
+                </div>
+                <!--                    Choose one Sauce-->
+                <div class="row form-group">
+                  <label>Sauce</label>
+                  <div class="col-md-12">
+                    <!-- <label class="sr-only" for="appetiser">Appetiser</label> -->
+                    <div class='col-md-3 col'>
+                      <input type="radio" checked="checked" id="Ketchup" name="Sauce">
+                      <label for="Ketchup" (click)="changeSauce('Ketchup')"> Ketchup</label>
+                    </div>
+                    <div class='col-md-3 col'>
+                      <input type="radio" id="Mustard yellow sauce" name="Sauce">
+                      <label for="Mustard yellow sauce" (click)="changeSauce('Mustard yellow sauce')"> Mustard yellow
+                        sauce</label>
+                    </div>
+                    <div class='col-md-3 col'>
+                      <input type="radio" id="Vinegar" name="Sauce">
+                      <label for="Vinegar" (click)="changeSauce('Vinegar')"> Vinegar</label>
+                    </div>
+                    <div class='col-md-3 col'>
+                      <input type="radio" id="Chili sauce" name="Sauce">
+                      <label for="Chili sauce" (click)="changeSauce('Chili sauce')"> Chili sauce</label>
+                    </div>
+                  </div>
+                </div>
+
+                <!--                    choose tags to match your combo -->
+                <div class="row form-group">
+                  <label>Tags</label>
+                  <div class="col-md-12">
+                    <!-- <label class="sr-only" for="appetiser">Appetiser</label> -->
+                    <div class='col-md-2 col'>
+                      <input type="radio" checked="checked" id="Healthy" name="Tag">
+                      <label for="Healthy" (click)="changeLabel('Healthy')"> Healthy</label>
+                    </div>
+                    <div class='col-md-2 col'>
+                      <input type="radio" id="Fat" name="Tag">
+                      <label for="Fat" (click)="changeLabel('Fat')"> Fat</label>
+                    </div>
+                    <div class='col-md-2 col'>
+                      <input type="radio" id="Oily" name="Tag">
+                      <label for="Oily" (click)="changeLabel('Oily')"> Oily</label>
+                    </div>
+                    <div class='col-md-2 col'>
+                      <input type="radio" id="Fitness" name="Tag">
+                      <label for="Fitness" (click)="changeLabel('Fitness')"> Fitness</label>
+                    </div>
+                    <div class='col-md-2 col'>
+                      <input type="radio" id="Proteins" name="Tag">
+                      <label for="Proteins" (click)="changeLabel('Proteins')"> Proteins</label>
+                    </div>
+                    <div class='col-md-2 col'>
+                      <input type="radio" id="Salty" name="Tag">
+                      <label for="Salty" (click)="changeLabel('Salty')"> Salty</label>
+                    </div>
+                    <div class='col-md-2 col'>
+                      <input type="radio" id="Sour" name="Tag">
+                      <label for="Sour" (click)="changeLabel('Sour')"> Sour</label>
+                    </div>
+                  </div>
+                </div>
+                <!--write your combo name-->
+                <div class="row form-group">
+                  <div class="col-md-12">
+                    <input name="title" class="form-control" placeholder="Combo Name" [(ngModel)]="title">
+                  </div>
+                </div>
+                <!--                    write some description about the combo-->
+                <div class="row form-group">
+                  <div class="col-md-12">
+                    <textarea name="description" cols="30" rows="10" class="form-control"
+                              placeholder="Write some description" [(ngModel)]="description"></textarea>
+                  </div>
+                </div>
+                <div style="text-align: center; margin-top: 50px">
+                  <button type="submit" class="btn btn-primary" (click)="createnewcombo()" [hidden]="comboid!=''">
+                    Create
+                  </button>
+                  <button type="submit" class="btn btn-primary" (click)="editcombo()" [hidden]="comboid==''">Done
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+<!--  end of body-->
+</html>

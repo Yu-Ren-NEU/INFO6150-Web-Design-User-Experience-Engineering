@@ -1,0 +1,90 @@
+input[type="radio"]{
+  display:none;
+}
+
+input[type="radio"] + label
+{
+
+  color: #FBB448;
+  background: papayawhip;
+  height: 24px;
+  width: auto;
+  display:inline-block;
+  padding: 0 10px 0 10px;
+  margin: 0 0 0 20px;
+  border-radius: 5px;
+  &:hover{
+    box-shadow:2px 2px silver;
+    height: 26px;
+    width: auto;
+  }
+}
+
+input[type="radio"]:checked + label
+{
+
+  color: white;
+  height: 24px;
+  width: auto;
+  background: #FBB448;
+  display:inline-block;
+  padding: 0 10px 0 10px;
+  margin: 0 0 0 20px;
+  border-radius: 5px;
+  &:hover{
+    box-shadow:2px 2px silver;
+    height: 26px;
+    width: auto;
+  }
+
+}
+
+.col{
+  display: inline-block;
+  img {
+    height: 40px;
+    width: 40px;
+    &:hover{
+      width: 45px;
+      height: auto;
+    }
+  }
+
+}
+
+.form-group > label {
+  font-size: 30px;
+}
+
+.col-md-12 >label {
+  font-size: 30px;
+}
+
+.maindish {
+  padding: 0 20px !important;
+}
+
+.maindish-container {
+  //padding: 0 !important;
+}
+
+.col-md-12 {
+  padding: 0 !important;
+}
+
+.gtco-heading {
+  width: 100%;
+}
+
+.row {
+  margin: 0 !important;
+}
+
+.combo-others {
+  padding: 0 50px !important;
+}
+
+.form-group {
+  margin-top: 50px!important;
+}
+

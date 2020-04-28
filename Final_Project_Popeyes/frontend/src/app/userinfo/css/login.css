@@ -1,0 +1,25 @@
+.login{
+  float:left;
+  box-shadow: 0 10px 10px 10px whitesmoke;
+  width: 450px;
+  height: 500px;
+  padding: 30px;
+}
+
+.register{
+  float:right;
+  box-shadow: 0 10px 10px 10px whitesmoke;
+  width: 450px;
+  height: 500px;
+  padding: 30px;
+}
+
+.clear{
+  clear: both;
+}
+
+.button{
+  margin-top: 30px;
+}
+
+

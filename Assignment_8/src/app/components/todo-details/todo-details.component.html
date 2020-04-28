@@ -1,0 +1,20 @@
+<!--The frame of todo's detail interface-->
+<div class="detail">
+  <div class="title"><span>Todo's Detail</span></div>
+  <div class="input-group">
+    <div class="left">Title:</div>
+    <input class="right" type="text" [(ngModel)]="item.title"/></div>
+  <div class="input-group">
+    <div class="left">Description:</div>
+    <input class="right" type="text" [(ngModel)]="item.description"/></div>
+  <div class="input-group">
+    <div class="left">Due:</div>
+    <input class="right" type="text" [(ngModel)]="item.due" placeholder="yyyy-mm-dd hh:mm"/></div>
+  <div class="input-group">
+    <div class="left">IsCompleted:</div>
+    <input class="right" type="text" [(ngModel)]="item.isCompleted"/></div>
+  <div class="btn-group">
+    <button (click)="update()">Update</button>
+    <button (click)="back()">Back</button>
+  </div>
+</div>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="description" content="Roxy">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+</head>
+<body data-spy="scroll" data-target="#navbar" class="static-layout">
+<nav id="header-navbar" class="navbar navbar-expand-lg py-4">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center text-white" href="/">
+      <h3 class="font-weight-bolder mb-0">DIY COMBO</h3>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav-header"
+            aria-controls="navbar-nav-header" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="lnr lnr-menu"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbar-nav-header">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/combolist">List</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/newcombo">New</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/userinfo">My Account</a>
+        </li>
+        <li class="nav-item only-desktop">
+          <a class="nav-link" id="side-nav-open" href="/userinfo">
+            <span class="lnr lnr-menu"></span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="jumbotron jumbotron-single d-flex align-items-center"
+     style="background-image: url('assets/index/img/bg.jpg')">
+  <div class="container text-center">
+    <h1 class="display-2 mb-4">Combo Information</h1>
+  </div>
+</div>  <!-- Combo Section -->
+<section id="blog" class="bg-grey">
+  <div class="container">
+    <div class="section-content">
+      <div class="title-wrap mb-5">
+        <h2 class="section-title">Combo Information</h2>
+      </div>
+      <section id="single-content" class="bg-white">
+        <div class="container">
+          <div class="section-content blog-content">
+
+            <div class="row">
+              <!-- Single Content Holder -->
+              <!--              Different parameters to store the information of this combo.-->
+              <div class="col-md-8 offset-md-2 mt-4">
+                <h4 class="diy1">{{item.Title}}</h4>
+                <p><img src="/assets/menu/img/{{item.Main}}.jpg" class="combo" style="width: 100%"></p><br/>
+                <p class="center">{{item.Owner}}</p>
+
+                <!--                A table to present the information in this combo.-->
+                <table class="table">
+                  <tr>
+                    <td>Main course:</td>
+                    <td>{{item.Main}}</td>
+                  </tr>
+                  <tr>
+                    <td>Side:</td>
+                    <td>{{item.Side}}</td>
+                  </tr>
+                  <tr>
+                    <td>Small Fountain Drink:</td>
+                    <td>{{item.Drink}}</td>
+                  </tr>
+                  <tr>
+                    <td>Sauce:</td>
+                    <td>{{item.Sauce}}</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </table>
+
+                <!--                The description from the combo's user-->
+                <p>Description:<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  {{item.Description}}
+                </p>
+
+                <!--                A table to present the comments about this combo from others-->
+                <p class="comment-style">Comments:</p>
+                <table class="table">
+                  <tr *ngFor="let commentitem of comments">
+                    <td>～ {{commentitem.split('/')[0]}}</td>
+                    <td>from {{commentitem.split('/')[1]}}</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </table>
+
+                <!--                According to combo's ownermail and user's mail to judge that what operations should be shown.-->
+                <!--                This is comment input.-->
+                <div class="col-md-12 form-group margin">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Add Comments..."
+                            [hidden]="item.Ownermail==usermail || username==null" [(ngModel)]="comment"></textarea>
+                </div>
+                <div class="col-md-12 text-center">
+                  <!--                  For submitting comment-->
+                  <button class="btn btn-primary btn-shadow btn-lg" type="submit" name="submit"
+                          [hidden]="item.Ownermail==usermail || username==null" (click)="sendcomment()">Send
+                  </button>
+                  <!--                  For editing this combo.-->
+                  <button class="btn btn-primary btn-shadow btn-lg" type="submit" name="submit"
+                          [hidden]="item.Ownermail!=usermail" (click)="editcombo()">Edit
+                  </button>
+                  <!--                  For deleting this combo.-->
+                  <button class="btn btn-primary btn-shadow btn-lg" type="submit" name="submit"
+                          [hidden]="item.Ownermail!=usermail" (click)="deletecombo()" style="margin-left: 50px">Delete
+                  </button>
+                </div>
+
+              </div>
+              <!-- End of Contact Form Holder -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+    <!-- End of Combo -->
+  </div>
+
+
+</section>
+<!-- End of Combo Section -->  <!-- Features Section-->
+<section id="cta" class="bg-fixed overlay" style="background-image: url('assets/index/img/bg.jpg');">
+  <div class="container">
+    <div class="section-content">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h2 class="mb-2">Do you want to make your own plan for a combo?</h2>
+          <br>
+          <!--          Jump to new combo page-->
+          <a class="btn btn-outline-primary btn-lg" href="/newcombo">CREATE MY COMBO</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</body>
+</html>
+
+

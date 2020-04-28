@@ -1,0 +1,132 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Home</title>
+  <meta name="description" content="Roxy">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+</head>
+<div data-spy="scroll" data-target="#navbar" class="static-layout">
+  <nav id="header-navbar" class="navbar navbar-expand-lg py-4">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center text-white" href="/">
+        <h3 class="font-weight-bolder mb-0">DIY COMBO</h3>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav-header"
+              aria-controls="navbar-nav-header" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="lnr lnr-menu"></span>
+      </button>
+      <!--      To different pages using router.-->
+      <div class="collapse navbar-collapse" id="navbar-nav-header">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/index">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/combolist">List</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/newcombo">New</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/userinfo">My Account</a>
+          </li>
+          <li class="nav-item only-desktop">
+            <a class="nav-link" id="side-nav-open" href="/userinfo">
+              <span class="lnr lnr-menu"></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="jumbotron d-flex align-items-center">
+    <div class="container text-center">
+      <h1 class="display-2 mb-4">PROFILE</h1>
+    </div>
+    <!--    <div class="rectangle-1"></div>-->
+    <!--    <div class="rectangle-2"></div>-->
+    <div class="rectangle-transparent-1"></div>
+    <div class="rectangle-transparent-2"></div>
+    <div class="circle-1"></div>
+    <div class="circle-2"></div>
+    <div class="circle-3"></div>
+    <div class="triangle triangle-1">
+      <img src="assets/index/img/a.jpg" alt="">
+    </div>
+    <div class="triangle triangle-2">
+      <img src="assets/index/img/obj_triangle.png" alt="">
+    </div>
+    <div class="triangle triangle-3">
+      <img src="assets/index/img/obj_triangle.png" alt="">
+    </div>
+    <div class="triangle triangle-4">
+      <img src="assets/index/img/obj_triangle.png" alt="">
+    </div>
+  </div>
+
+  <!-- Features Section-->
+  <section id="contact-form" class="bg-white">
+    <div class="container">
+      <div class="section-content">
+        <div class="login">
+          <a class="subtitle"><b>MY INFORMATION</b></a>
+          <!--          Part of user information-->
+          <div class="subsubtitle button">
+            <p>User Name: {{username}}</p>
+            <p>Email: {{usermail}}</p>
+            <p>Phone: {{userphone}}</p>
+          </div>
+        </div>
+        <div class="clear"></div>
+
+        <div class="col-md-12 blog-holder">
+          <div class="row">
+            <!-- Combo Item -->
+            <!--            Part of user's related combos.-->
+            <!--            Hide the combos which are not user's-->
+            <div *ngFor="let combo of combolist; let key=index" [hidden]="combo.Ownermail!=usermail"
+                 class="col-md-4 blog-item-wrapper" (click)="JumpToComboInfo(key)">
+              <div class="blog-item">
+                <div class="blog-img">
+                  <img src="assets/index/img/{{combo.Label}}.jpg" alt="">
+                </div>
+                <div class="blog-text">
+                  <div class="blog-tag">
+                    <h6><small>{{combo.Label}}</small></h6>
+                  </div>
+                  <div class="blog-title">
+                    <h4>{{combo.Title}}</h4>
+                  </div>
+                  <div class="blog-meta">
+                    <p class="blog-date">{{combo.Createdtime.split('T')[0]}}</p>
+                    /
+                    <p class="combo-comment"><a href="">{{combo.Comments.length}} Comments</a></p>
+                  </div>
+                  <div class="blog-desc">
+                    <p>{{combo.Description}}</p>
+                  </div>
+                  <div class="blog-author">
+                    <p>by {{combo.Owner}}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End of Combo Item -->
+          </div>
+        </div>
+
+        <div class="col-md-12 text-center">
+          <button class="btn btn-primary btn-shadow btn-lg" type="submit" name="submit" (click)="logout()">LOG OUT
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+</div>
+
+

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="description" content="Roxy">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+</head>
+<body data-spy="scroll" data-target="#navbar" class="static-layout">
+<nav id="header-navbar" class="navbar navbar-expand-lg py-4">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center text-white" href="/">
+      <h3 class="font-weight-bolder mb-0">DIY COMBO</h3>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav-header"
+            aria-controls="navbar-nav-header" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="lnr lnr-menu"></span>
+    </button>
+    <!--      To different pages using router.-->
+    <div class="collapse navbar-collapse" id="navbar-nav-header">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/combolist">List</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/newcombo">New</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/userinfo">My Account</a>
+        </li>
+        <li class="nav-item only-desktop">
+          <a class="nav-link" id="side-nav-open" href="/userinfo">
+            <span class="lnr lnr-menu"></span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="jumbotron jumbotron-single d-flex align-items-center"
+     style="background-image: url('assets/index/img/bg.jpg')">
+  <div class="container text-center">
+    <h1 class="display-2 mb-4">DIY LIST</h1>
+  </div>
+</div>  <!-- Combo Section -->
+<section id="blog" class="bg-grey">
+  <div class="container">
+    <div class="section-content">
+      <div class="title-wrap mb-5">
+        <h2 class="section-title">Combo <b>List</b></h2>
+        <p class="section-sub-title">Do you like others' combos? Or make your own combo!</p>
+      </div>
+      <div class="row">
+        <!-- Combo -->
+        <div class="col-md-12 blog-holder">
+          <div class="row">
+            <!-- Combo Item -->
+            <!--            Using for loop to show the combo from the combolist-->
+            <div *ngFor="let combo of combolist; let key=index" class="col-md-4 blog-item-wrapper"
+                 (click)="JumpToComboInfo(key)">
+              <div class="blog-item">
+                <div class="blog-img">
+                  <img src="assets/index/img/{{combo.Label}}.jpg" alt="">
+                </div>
+                <div class="blog-text">
+                  <div class="blog-tag">
+                    <h6><small>{{combo.Label}}</small></h6>
+                  </div>
+                  <div class="blog-title">
+                    <h4>{{combo.Title}}</h4>
+                  </div>
+                  <div class="blog-meta">
+                    <!--                    Just show the detailed day-->
+                    <p class="blog-date">{{combo.Createdtime.split('T')[0]}}</p>
+                    /
+                    <!--                    Show the number of comments-->
+                    <p class="combo-comment">{{combo.Comments.length}} Comments</p>
+                  </div>
+                  <div class="blog-desc">
+                    <p>{{combo.Description}}</p>
+                  </div>
+                  <div class="blog-author">
+                    <p>by {{combo.Owner}}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End of Combo Item -->
+          </div>
+        </div>
+        <!-- End of Combo -->
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End of Combo Section -->  <!-- Features Section-->
+<section id="cta" class="bg-fixed overlay" style="background-image: url('assets/index/img/bg.jpg');">
+  <div class="container">
+    <div class="section-content">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h2 class="mb-2">Do you want to make your own plan for a combo?</h2>
+          <br>
+          <a class="btn btn-outline-primary btn-lg" (click)="JumpToNewCombo()">CREATE MY COMBO</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</body>
+</html>

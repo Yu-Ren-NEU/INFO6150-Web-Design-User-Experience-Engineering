@@ -1,0 +1,16 @@
+<div class="addnew">
+  <div class="title"><span>Add New Todo</span></div>
+  <div class="input-group">
+    <div class="left">Title:</div>
+    <input class="right" type="text" [(ngModel)]="title"/></div>
+  <div class="input-group">
+    <div class="left">Description:</div>
+    <input class="right" type="text" [(ngModel)]="description"/></div>
+  <div class="input-group">
+    <div class="left">Due:</div>
+    <input class="right" type="text" [(ngModel)]="due" placeholder="yyyy-mm-dd hh:mm"/></div>
+  <div class="btn-group">
+    <button (click)="add()">Add</button>
+    <button (click)="back()">Back</button>
+  </div>
+</div>

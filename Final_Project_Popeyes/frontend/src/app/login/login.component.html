@@ -1,0 +1,161 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Home</title>
+  <meta name="description" content="Roxy">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+</head>
+<div data-spy="scroll" data-target="#navbar" class="static-layout">
+  <nav id="header-navbar" class="navbar navbar-expand-lg py-4">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center text-white" href="/">
+        <h3 class="font-weight-bolder mb-0">DIY COMBO</h3>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav-header"
+              aria-controls="navbar-nav-header" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="lnr lnr-menu"></span>
+      </button>
+      <!--      To different pages using router.-->
+      <div class="collapse navbar-collapse" id="navbar-nav-header">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/combolist">List</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/newcombo">New</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/userinfo">My Account</a>
+          </li>
+          <li class="nav-item only-desktop">
+            <a class="nav-link" id="side-nav-open" href="/userinfo">
+              <span class="lnr lnr-menu"></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--  The layout in the header.-->
+  <div class="jumbotron d-flex align-items-center">
+    <div class="container text-center">
+      <h1 class="display-1 mb-4">Login</h1>
+    </div>
+    <div class="circle-1"></div>
+    <div class="circle-2"></div>
+    <div class="circle-3"></div>
+    <div class="triangle triangle-1">
+      <img src="assets/img/a.jpg" alt="">
+    </div>
+    <div class="triangle triangle-2">
+      <img src="assets/img/obj_triangle.png" alt="">
+    </div>
+    <div class="triangle triangle-3">
+      <img src="assets/img/obj_triangle.png" alt="">
+    </div>
+    <div class="triangle triangle-4">
+      <img src="assets/img/obj_triangle.png" alt="">
+    </div>
+  </div>
+
+  <!-- Features Section-->
+  <section class="bg-white padding-top-bottom">
+    <div class="container">
+      <div class="section-content">
+        <!-- Section Title -->
+        <div class="login">
+          <div class="title-wrap mb-5" data-aos="fade-up">
+            <h2 class="section-title">
+              <a href="https://gettemplates.co" target="_blank">SIGN IN</a>
+            </h2>
+            <p class="section-sub-title">Welcome back! <br/>Sign in to access your account.</p>
+          </div>
+          <!--          Different parameters to store login information.-->
+          <div class="col-md-12 form-group">
+            <input type="text" class="form-control" name="email" placeholder="Email" [(ngModel)]="loginmail">
+          </div>
+          <div class="col-md-12 form-group">
+            <input type="password" class="form-control" name="password" placeholder="Password"
+                   [(ngModel)]="loginpassword">
+          </div>
+          <div class="col-md-12 text-center button">
+            <button class="btn btn-primary btn-shadow btn-lg" type="submit" name="submit" (click)="userlogin()">LOGIN
+            </button>
+          </div>
+        </div>
+
+        <div class="register">
+          <div class="title-wrap mb-5" data-aos="fade-up">
+            <h2 class="section-title">
+              <a href="https://gettemplates.co" target="_blank">CREATE AN ACCOUNT</a>
+            </h2>
+            <p class="section-sub-title">Create an account to track <br/> and manage your DIYs<br/></p>
+          </div>
+          <!--          Different parameters to store new user's information.-->
+          <div class="col-md-12 form-group">
+            <input type="text" class="form-control" name="name" placeholder="User Name" [(ngModel)]="username">
+          </div>
+          <div class="col-md-12 form-group">
+            <input type="mail" class="form-control" name="email" placeholder="Email" [(ngModel)]="mail">
+          </div>
+          <div class="col-md-12 form-group">
+            <input type="phone" class="form-control" name="phoneNumber" placeholder="Phone" [(ngModel)]="phone">
+          </div>
+          <div class="col-md-12 form-group">
+            <input type="password" class="form-control" name="password" placeholder="Password" [(ngModel)]="password">
+          </div>
+          <div class="col-md-12 text-center button">
+            <button class="btn btn-primary btn-shadow btn-lg" type="submit" name="submit" (click)="addnewuser()">CREATE
+              AN ACCOUNT
+            </button>
+          </div>
+        </div>
+        <div class="clear"></div>
+      </div>
+
+    </div>
+  </section>
+  <!-- End of Features Section-->
+  <section id="section-featurettes" class="featurettes overlay bg-fixed"
+           style="background-image: url('assets/index/img/bg.jpg');">
+
+    <div class="section-content pt-0">
+      <div class="title-wrap">
+        <h2 class="section-title">Where To Find Us?</h2>
+      </div>
+      <div class="row text-center mt-4">
+        <div class="col-md-3">
+          <span class="lnr lnr-location fs-40 py-4 d-block"></span>
+          <h5>LOCATION</h5>
+          <p>Northeastern University</p>
+        </div>
+        <div class="col-md-3">
+          <span class="lnr lnr-clock fs-40 py-4 d-block"></span>
+          <h5>WORKING TIME</h5>
+          <p>Monday - Saturday</p>
+        </div>
+        <div class="col-md-3">
+          <span class="lnr lnr-phone fs-40 py-4 d-block"></span>
+          <h5>CALL US</h5>
+          <p>877-297-6309</p>
+        </div>
+        <div class="col-md-3">
+          <span class="lnr lnr-phone fs-40 py-4 d-block"></span>
+          <h5>EMAIL</h5>
+          <p>renyu0520@gmail.com</p>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+</div>
+
+
+

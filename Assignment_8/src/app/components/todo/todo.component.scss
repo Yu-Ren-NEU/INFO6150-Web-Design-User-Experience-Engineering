@@ -1,0 +1,38 @@
+.todolist {
+  margin: 50px 0 20px 0;
+  padding: 0 250px;
+
+  span {
+    font-size: 20px;
+    font-family: "Arial Black";
+  }
+
+  // Style of todo show
+  ul li {
+    padding: 10px 0;
+    font-size: 17px;
+    border-bottom: 1px gainsboro solid;
+    line-height: 30px;
+    button {
+      float: right;
+      margin: 0 10px;
+      padding: 5px 10px;
+      border: 1px gray solid;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+  }
+
+  >div {
+    margin: 50px 0;
+    text-align: center;
+    .add {
+      font-family: "Apple LiSung";
+      font-size: 18px;
+      padding: 5px 10px;
+      border: 1px gray solid;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+  }
+}
