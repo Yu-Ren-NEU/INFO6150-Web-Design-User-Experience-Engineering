@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/neu-mis-info6150-spring-2020/assignment-4-Yu-Ren-NEU#readme",
   "devDependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.3"
   },
   "dependencies": {
     "node-sass": "^4.13.1",
